@@ -2,6 +2,12 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
+.horizonal_line{
+    width: 50%;
+    border: dashed 1px;
+    
+}
+
 
 /* Navbar */
 .Navbar{
@@ -47,7 +53,7 @@ body{
 .main_content_description{
     font-size: 18px;
 }
-button{
+.main_buttons{
     padding: 1rem;
     border-radius: 20px;
     border-color: red;
@@ -55,7 +61,7 @@ button{
     font-size: 24px;
     color: red;
 }
-button:hover{
+.main_buttons:hover{
     border-color: red;
     background-color: red;
     color: yellow;
@@ -63,23 +69,23 @@ button:hover{
 
 /* Skills */
 
-.skill_content_headline{
+.content_headline{
 text-align: center;
 font-size: 30px;
 }
-.skill_card_content{
+.card_content{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
 .card{
-   min-width: 26%;
+    min-width: 300px;
     padding: 20px;
     margin: 20px;
     border-radius: 40px;
     border: 2px solid;
     border-color: red;
-    
+    max-width: 400px;  
 }
 .skillslist{
     justify-content: center;
@@ -101,14 +107,14 @@ justify-content: center;
 .listitem:hover{
 
 
-    background-color: yellow;
+    background-color: white;
     border-color: red;
     color: red;
     text-align: center;
     font-weight: bold;
   
 }
-.skill_card_headline{
+.card_headline{
     text-align: center;
 }
 
@@ -148,4 +154,37 @@ justify-content: center;
     color: white;
     margin-top: 20px;
     padding-bottom: 20px;
+}
+.card_button{
+    border-radius: 20px;
+    padding: 7px;
+    background-color: red;
+    color: white;
+    border-color: white;
+    font-weight: bold;
+}
+.card_button:hover{
+
+    color: red;
+    border-color: red;
+    background-color: white;
+}
+/* contact us */
+.Contact{
+padding: 20px;
+margin: 20px;
+border-radius: 20px;
+justify-items: center;
+}
+.form_container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.form_label{
+    font-size: 20px;
+    
+}
+.form_row{
+    margin-top: 30px;
 }

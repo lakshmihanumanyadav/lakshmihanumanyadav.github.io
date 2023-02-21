@@ -1,84 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="Navbar">
-        <h2 >Portfolio</h2>
+        <h2>Portfolio</h2>
         <nav>
             <ul class="sidebar">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Skills</li></a>
-                <a href="#"><li>Project</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Skills</li>
+                </a>
+                <a href="#">
+                    <li>Project</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
             </ul>
-        </nav>        
+        </nav>
     </div>
 
     <!-- Banner -->
     <div class="main_content">
         <h2 class="main_content_headline"> Hi<span class="material-symbols-outlined">
-            waving_hand
+                waving_hand
             </span>, I am Lakshmi Yadav</h2>
-        <span class="main_content_description">Frontend Developer having hands on experience in multiple Technologies like HTML, CSS, JavaScript, and BootStrap.</span>
+        <span class="main_content_description">Frontend Developer having hands on experience in multiple Technologies
+            like HTML, CSS, JavaScript, and BootStrap.</span>
         <div class="main_contents_buttons">
-            <button>My Resume</button>
-            <button>Hire me</button>
+            <button class="main_buttons">My Resume</button>
+            <button class="main_buttons">Hire me</button>
         </div>
     </div>
-    
+
     <!-- Skills -->
     <div>
-        <h2 class="skill_content_headline">My Skills</h2>
-        <div class="skill_card_content">
-        <div class="card">
-            
-            <h3 class="skill_content_headline">Frontend</h3>
-            <ul class="skillslist">
-                <li class="listitem">HTML</li>
-                <li class="listitem">CSS</li>
-                <li class="listitem">JavaScript</li>
-                <li class="listitem">BootStrap</li>
-            </ul>
-            
-        </div>
-        <div class="card">
-            <h3 class="skill_content_headline">Backend</h3>
-            <ul class="skillslist">
-                <li class="listitem">C</li>
-                <li class="listitem">C++</li>
-                <li class="listitem">Java</li>
-                <li class="listitem">Python</li>
-            </ul>
-            
-        </div>
-        <div class="card">
-            <h3 class="skill_content_headline">Other Skills</h3>
-            <ul class="skillslist">
-                <li class="listitem">SQL Databases</li>
-                <li class="listitem">Cloud</li>
-                <li class="listitem">ITIL Process</li>            
-            </ul>           
-        </div>
+        <h2 class="content_headline">My Skills</h2>
+        <hr class="horizonal_line" />
+        <div class="card_content">
+            <div class="card">
+                <h3 class="card_headline">Frontend</h3>
+                <ul class="skillslist">
+                    <li class="listitem">HTML</li>
+                    <li class="listitem">CSS</li>
+                    <li class="listitem">JavaScript</li>
+                    <li class="listitem">BootStrap</li>
+                </ul>
+
+            </div>
+            <div class="card">
+                <h3 class="card_headline">Backend</h3>
+                <ul class="skillslist">
+                    <li class="listitem">C</li>
+                    <li class="listitem">C++</li>
+                    <li class="listitem">Java</li>
+                    <li class="listitem">Python</li>
+                </ul>
+
+            </div>
+            <div class="card">
+                <h3 class="card_headline">Other Skills</h3>
+                <ul class="skillslist">
+                    <li class="listitem">SQL Databases</li>
+                    <li class="listitem">Cloud</li>
+                    <li class="listitem">ITIL Process</li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <!-- Project -->
+    <div>
+        <h2 class="content_headline">My Projects</h2>
+        <hr class="horizonal_line" />
+        <div class="card_content">
+            <div class="card">
+                <h3 class="card_headline">Portfolio Website</h3>
+                <p>Developed a project that includes registration of patients, storing their details into the system,
+                    and also booking their appointments with doctors. Our software has the facility to give a unique id
+                    for every patient and stores the details of every patient and the staff automatically.</p>
+                <button class="card_button" href="#">Know more</button>
+            </div>
+            <div class="card">
+                <h3 class="card_headline">Hospital Management System</h3>
+                <p>Developed a project that includes registration of patients, storing their details into the system,
+                    and also booking their appointments with doctors. Our software has the facility to give a unique id
+                    for every patient and stores the details of every patient and the staff automatically.</p>
+                <button class="card_button" href="#">Know more</button>
+
+            </div>
+            <div class="card">
+                <h3 class="card_headline">Tenant Management System</h3>
+                <p>Developed a project that includes registration of patients, storing their details into the system,
+                    and also booking their appointments with doctors. Our software has the facility to give a unique id
+                    for every patient and stores the details of every patient and the staff automatically.</p>
+                <button class="card_button" href="#">Know more</button>
+            </div>
+        </div>
+    </div>
+  
     <!-- Footer -->
     <div class="footer">
         <h1 class="footer_text">Contact Me</h1>
         <ul class="urls_container">
-            <a href="#" class="urls"><li>Facebook</li></a>
-            <a href="#" class="urls"><li>Twitter</li></a>
-            <a href="#" class="urls"><li>Instagram</li></a>
-            <a href="#" class="urls"><li>LinkedIn</li></a>
+            <a href="#" class="urls">
+                <li>Facebook</li>
+            </a>
+            <a href="#" class="urls">
+                <li>Twitter</li>
+            </a>
+            <a href="#" class="urls">
+                <li>Instagram</li>
+            </a>
+            <a href="#" class="urls">
+                <li>LinkedIn</li>
+            </a>
         </ul>
         <p class="footer_bottom_text">Copyright © 2023 Lakshmi | Powered by Lakshmi Yadav</p>
     </div>
 </body>
+
 </html>
