@@ -80,6 +80,7 @@ justify-content: center;
 }
 .card{
     min-width: 300px;
+    min-width: 400px;
     padding: 20px;
     margin: 20px;
     border-radius: 40px;
