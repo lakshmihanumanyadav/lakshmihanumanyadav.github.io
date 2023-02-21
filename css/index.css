@@ -169,22 +169,3 @@ justify-content: center;
     border-color: red;
     background-color: white;
 }
-/* contact us */
-.Contact{
-padding: 20px;
-margin: 20px;
-border-radius: 20px;
-justify-items: center;
-}
-.form_container{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.form_label{
-    font-size: 20px;
-    
-}
-.form_row{
-    margin-top: 30px;
-}
