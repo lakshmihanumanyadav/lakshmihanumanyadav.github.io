@@ -3,6 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: whitesmoke;
+    
 }
 
 .horizonal_line {
@@ -101,6 +102,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
 }
 
 .card {
@@ -114,7 +116,6 @@ body {
     border-color: red;
     -webkit-box-shadow: 3px 5px 6px 0px red; 
     box-shadow: 3px 5px 6px 0px red;
-
     /* This will make the card outside of the window */
     transform: translateX(400%);
     transform: transform 0.3s ease;
