@@ -210,10 +210,11 @@ body {
     border-color: red;
     background-color: white;
 }
-
+.icons{
+    width: 40px;
+}
 /* Resposive */
 @media screen and (max-width:500px) {
-  
     .logo{
         display: none;
     }
