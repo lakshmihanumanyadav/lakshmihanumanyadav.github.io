@@ -235,6 +235,9 @@ body {
 }
 /* Resposive */
 @media screen and (max-width:500px) {
+    .Navbar{
+        padding: 0;
+    }
     .logo{
         display: none;
     }
