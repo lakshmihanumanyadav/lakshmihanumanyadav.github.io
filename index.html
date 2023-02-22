@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -17,16 +18,16 @@
         <h2>Portfolio</h2>
         <nav>
             <ul class="sidebar">
-                <a href="#">
+                <a href="#" onclick="scrollToPosition('home')"> 
                     <li>Home</li>
                 </a>
-                <a href="#">
+                <a href="#" onclick="scrollToPosition('skills')">
                     <li>Skills</li>
                 </a>
-                <a href="#">
+                <a href="#" onclick="scrollToPosition('projects')">
                     <li>Project</li>
                 </a>
-                <a href="#">
+                <a href="#" onclick="scrollToPosition('contact')">
                     <li>Contact</li>
                 </a>
             </ul>
@@ -34,7 +35,7 @@
     </div>
 
     <!-- Banner -->
-    <div class="main_content">
+    <div class="main_content" id="home">
         <h2 class="main_content_headline"> Hi<span class="material-symbols-outlined">
                 waving_hand
             </span>, I am Lakshmi Yadav</h2>
@@ -47,10 +48,10 @@
     </div>
 
     <!-- Skills -->
-    <div>
-        <h2 class="content_headline">My Skills</h2>
+    <div id="skills">
+        <h2 class="content_headline" >My Skills</h2>
         <hr class="horizonal_line" />
-        <div class="card_content">
+        <div class="card_content" >
             <div class="card">
                 <h3 class="card_headline">Frontend</h3>
                 <ul class="skillslist">
@@ -83,13 +84,13 @@
     </div>
 
     <!-- Project -->
-    <div>
+    <div id="projects">
         <h2 class="content_headline">My Projects</h2>
         <hr class="horizonal_line" />
         <div class="card_content">
             <div class="card">
                 <h3 class="card_headline">Portfolio Website</h3>
-                <p>Developed a portfolio website in pure HTML, CSS, Javascript to enhance my hands-on skills on this technology.</p>
+                <p>Designed and Developed a portfolio website in pure HTML, CSS, Javascript to enhance my hands-on skills on this technologies. </p>
                 <button class="card_button" href="#">Know more</button>
             </div>
             <div class="card">
@@ -101,19 +102,19 @@
 
             </div>
             <div class="card">
-                <h3 class="card_headline">Landlord Tenant Management System</h3>
+                <h3 class="card_headline" id="card_title">Landlord Tenant Management System</h3>
                 <p>Developed a project for landlords to maintain all the details of the tenant, which reduce the workload of the Landlord, where the landlord does not need to maintain big-big files and diaries for tenants’ records and rent instead of that A landlord can do all these things using our system.
                     </p>
-                <button class="card_button" href="#">Know more</button>
+                <button class="card_button" href="#" >Know more</button>
             </div>
         </div>
     </div>
   
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="contact">
         <h1 class="footer_text">Contact Me</h1>
         <ul class="urls_container">
-            <a href="https://www.instagram.com/yadav.lakshmi.hanuman?igshid=Mzc0YWU1OWY=" class="urls" target="_blank" rel="nofollow">
+            <a href="https://www.facebook.com/lakshmi.yadav.142687" class="urls" target="_blank" rel="nofollow">
                 <li>Facebook</li>
             </a>
             <a href="https://www.instagram.com/yadav.lakshmi.hanuman?igshid=Mzc0YWU1OWY=" class="urls" target="_blank" rel="nofollow">
