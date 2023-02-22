@@ -50,6 +50,7 @@ body {
     font-size: 36px;
 }
 
+
 .main_contents_buttons {
     display: flex;
     gap: 2rem;
@@ -64,10 +65,12 @@ body {
 .main_buttons {
     padding: 1rem;
     border-radius: 20px;
+    border: 1px solid;
     border-color: red;
     background-color: yellow;
     font-size: 24px;
     color: red;
+    text-decoration: none;
 }
 
 .main_buttons:hover {
