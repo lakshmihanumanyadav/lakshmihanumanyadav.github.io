@@ -1,39 +1,43 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-.horizonal_line{
+
+.horizonal_line {
     width: 50%;
     border: dashed 1px;
-    
+
 }
 
 
 /* Navbar */
-.Navbar{
+.Navbar {
     background-color: yellow;
     display: flex;
     justify-content: space-between;
     padding: 0 3rem;
     align-items: center;
 }
-.sidebar{
+
+.sidebar {
     display: flex;
     gap: 1em;
-    list-style-type:none;
+    list-style-type: none;
     text-transform: uppercase;
     font-weight: bold;
 }
-.sidebar a{
+
+.sidebar a {
     color: black;
     text-decoration: none;
 }
-.sidebar a:hover{
+
+.sidebar a:hover {
     color: red;
 }
 
 /* Banner */
-.main_content{
+.main_content {
     background-color: yellow;
     display: flex;
     flex-direction: column;
@@ -41,19 +45,23 @@ body{
     align-items: center;
     padding: 2rem;
 }
-.main_content_headline{
+
+.main_content_headline {
     font-size: 36px;
 }
-.main_contents_buttons{
+
+.main_contents_buttons {
     display: flex;
     gap: 2rem;
     margin-top: 4rem;
 
 }
-.main_content_description{
+
+.main_content_description {
     font-size: 18px;
 }
-.main_buttons{
+
+.main_buttons {
     padding: 1rem;
     border-radius: 20px;
     border-color: red;
@@ -61,7 +69,8 @@ body{
     font-size: 24px;
     color: red;
 }
-.main_buttons:hover{
+
+.main_buttons:hover {
     border-color: red;
     background-color: red;
     color: yellow;
@@ -69,31 +78,48 @@ body{
 
 /* Skills */
 
-.content_headline{
-text-align: center;
-font-size: 30px;
+.content_headline {
+    text-align: center;
+    font-size: 36px;
+    transition: all 0.3s;
+    
 }
-.card_content{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+
+.content_headline:hover {
+    transform: translate(0px, 20px);
+    
 }
-.card{
+
+.card_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
     min-width: 300px;
-    min-width: 400px;
+    max-width: 400px;
     padding: 20px;
     margin: 20px;
     border-radius: 40px;
     border: 2px solid;
-    border-color: red; 
+    border-color: red;
+    -webkit-box-shadow: 3px 5px 6px 0px red; 
+    box-shadow: 3px 5px 6px 0px red;
 }
-.skillslist{
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+.skillslist {
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0 20px;
 }
-.listitem{
+
+.listitem {
     border: 2px solid;
     margin: 5px;
     padding: 10px;
@@ -102,33 +128,36 @@ justify-content: center;
     color: white;
     text-align: center;
     font-weight: bold;
-  
-}
-.listitem:hover{
 
+}
+
+.listitem:hover {
 
     background-color: white;
     border-color: red;
     color: red;
     text-align: center;
     font-weight: bold;
-  
+
 }
-.card_headline{
+
+.card_headline {
     text-align: center;
 }
 
 /* Footer */
 
-.footer{
+.footer {
     background-color: black;
 }
-.footer_text{
+
+.footer_text {
     padding-top: 30px;
     color: white;
     text-align: center;
 }
-.urls{
+
+.urls {
     text-decoration: none;
     color: white;
     border: 2px solid;
@@ -136,26 +165,29 @@ justify-content: center;
     margin: 5px;
     padding: 10px;
     border-radius: 20px;
-    
-}
-.urls:hover{
-    color: black;
-    background-color: white;
-    font-weight: bold;  
-}
-.urls_container{
-    display: flex;
-    list-style-type:none;
-   justify-content: center;
+
 }
 
-.footer_bottom_text{
+.urls:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.urls_container {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.footer_bottom_text {
     text-align: center;
     color: white;
     margin-top: 20px;
     padding-bottom: 20px;
 }
-.card_button{
+
+.card_button {
     border-radius: 20px;
     padding: 7px;
     background-color: red;
@@ -163,9 +195,38 @@ justify-content: center;
     border-color: white;
     font-weight: bold;
 }
-.card_button:hover{
+
+.card_button:hover {
 
     color: red;
     border-color: red;
     background-color: white;
+}
+
+/* Resposive */
+@media screen and (max-width:500px) {
+    .sidebar {
+        display: none;
+    }
+    .urls_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .urls {
+        text-align: center;
+    
+    }
+    .main_buttons {
+        padding: 0.8rem;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .main_content {
+      
+        height: 500px;
+        
+    }
+    
+    
+
 }
