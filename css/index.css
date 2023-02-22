@@ -108,17 +108,37 @@ body {
     max-width: 400px;
     padding: 20px;
     margin: 20px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 40px;
     border: 2px solid;
     border-color: red;
     -webkit-box-shadow: 3px 5px 6px 0px red; 
     box-shadow: 3px 5px 6px 0px red;
+
+    /* This will make the card outside of the window */
+    transform: translateX(400%);
+    transform: transform 0.3s ease;
+
 }
-.card:hover {
-    /* transform: scale(1.1); */
+/* Animation */
+/* This will make the even no of card from other direction */
+.card:nth-last-of-type(even){
+    transform: translateX(-400%);
+}
+/* This will make the card visible to the screen */
+.card.show{
+    transform: translateX(0);
 }
 
+/* Close Animation */
+ 
+
+@media (prefers-reduced-motion: no-preference) {
+    .card {
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+  }
+ 
 
 .skillslist {
     justify-content: center;

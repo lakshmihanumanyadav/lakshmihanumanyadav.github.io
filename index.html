@@ -133,6 +133,26 @@
         </ul>
         <p class="footer_bottom_text">Copyright © 2023 Lakshmi | Powered by Lakshmi Yadav</p>
     </div>
+
+    <script>
+        //  querySelectorAll() method returns all elements that matches a CSS selector
+        const cards = document.querySelectorAll('.card')
+        window.addEventListener("scroll", callCard)
+        callCard()
+
+        function callCard(){
+            const triggerBottom = window.innerHeight/5 * 4
+            cards.forEach(card => {
+                // The getBoundingClientRect() method returns the size of an element and its position relative to the viewport
+                const cardTop = card.getBoundingClientRect().top
+                if(cardTop < triggerBottom){
+                    card.classList.add('show')
+                } else{
+                    card.classList.remove('show')
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>
