@@ -191,8 +191,6 @@ body {
     width: 500px;
     padding: 20px;
     margin: auto;
-
-
 }
 ul{
     list-style-type: none;
@@ -237,7 +235,9 @@ ul{
     color: yellow; 
     border: 2px dotted yellow;
 }
-
+.journey_details{
+    width: 500;
+}
 .icons{
     width: 40px;
 }
@@ -314,7 +314,7 @@ ul{
 }
 
 /* Resposive */
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .Navbar{
         padding: 0;
         height: 10vh;
@@ -339,6 +339,10 @@ ul{
     }
     .footer{
         margin: 0;
+    }
+    .journey_section{
+        width: 90%;
+        padding: 20px;
     }
     
     
