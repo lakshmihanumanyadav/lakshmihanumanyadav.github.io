@@ -45,10 +45,30 @@ body {
 .sidebar a {
     color: var( --secondary-color);
     text-decoration: none;
+    position: relative;  
+}
+
+.sidebar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    background-color: red;    
+}
+.sidebar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .sidebar a:hover {
     color: var( --secondary-bg-color);
+
+    
 }
 
 /* Banner */
@@ -62,7 +82,7 @@ body {
 }
 
 .banner-img{
-    height: 45vh;
+    height: 40vh;
     border-radius: 50%;
 }
 .main_content_headline {
